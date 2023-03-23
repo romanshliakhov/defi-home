@@ -1,14 +1,19 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   width: 100%;
   position: relative;
+  font-family: var(--font-family-poppins);
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--color-main);
 }
 
 html {
   box-sizing: border-box;
+  height: 100%;
   width: 100%;
-  overflow-x: hidden;
 }
 
 *,
@@ -17,35 +22,44 @@ html {
   box-sizing: border-box;
 }
 
-
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a {
-  display: inline-flex;
+  display: inline-block;
   color: inherit;
   font-weight: inherit;
   font-style: inherit;
   font-family: inherit;
   text-decoration: none;
-  cursor: pointer;
   margin: 0;
+  width: fit-content;
+  cursor: pointer;
 }
 
 button {
   background-color: transparent;
   border: none;
-  display: inline-flex;
+  display: inline-block;
   outline: none;
+  padding: 0;
+  margin: 0;
+  line-height: initial;
+  width: fit-content;
   cursor: pointer;
+}
+
+p {
+  display: inline-block;
   padding: 0;
   margin: 0;
   line-height: initial;
 }
 
 ul,
-li {
+li,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -72,10 +86,15 @@ picture {
   display: inline-flex;
 }
 
+svg {
+  fill: transparent;
+}
+
 fieldset {
-    padding: 0;
-    outline: none;
-    border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
 }
 
 input {
@@ -93,6 +112,7 @@ textarea {
 label {
   display: block;
   position: relative;
+  width: 100%;
 }
 
 input::-webkit-outer-spin-button,
@@ -118,29 +138,28 @@ input[type="number"] {
   clip-path: inset(100%);
 }
 
-.container {
-  width: 100%;
-  max-width: 1545px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 10px;
-
-  &--fluid {
-    max-width: 1920px;
-  }
-}
-
-svg {
-  fill: transparent;
-}
-
 .body-scroll {
-    position: fixed;
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
+.main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+}
 
-
-
-
+.container {
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}

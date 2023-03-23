@@ -9,7 +9,11 @@
   }
 }
 
-@include font-face("Mulish", "../fonts/Mulish-Bold", 700, normal);
+@include font-face("Poppins", "../fonts/Poppins-Regular", 400, normal);
+@include font-face("Poppins", "../fonts/Poppins-Bold", 700, normal);
+@include font-face("Poppins", "../fonts/Poppins-Black", 900, normal);
+@include font-face("Raleway", "../fonts/Raleway-Regular", 400, normal);
+@include font-face("Raleway", "../fonts/Raleway-Bold", 700, normal);
 
 
 

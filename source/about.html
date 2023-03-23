@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="Pl">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <section class="divider">
+        <div class="container">
+          <div class="divider__wrapp">
+            <div class="divider__content">
+              <span>Skontaktuj się z nami:</span>
+              <a class="email" href="mailto:info@defi-home.eu">info@defi-home.eu</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <form class="about__search search">
+            <label class="search__label">
+              <input class="search__input" type="search" placeholder="Search products">
+              <div class="search__categories">All categories</div>
+            </label>
+          </form>
+
+          <div class="about__wrapp">
+            <div class="about__content">
+              <h1 class="title">Zabawa w jednym miejscu</h1>
+
+              <p>Sklep internetowy DeFi powstał jako realizacja pomysłu, który ma zapewnić klientowi przyjazny, wysokiej jakości, wygodny i tani zakup online. Naszą misją jest zapewnienie „dobrej ceny dla wszystkich kupujących” i dlatego oferujemy różnorodne produkty domowe, zdrowotne, pielęgnacyjne i rozrywkowe po bardzo korzystnych i konkurencyjnych cenach. </p>
+
+              <p>Wszystkie produkty są starannie dobrane, a każdy z nich ma swoją własną historię. Naszą misją jest zapewnienie każdemu klientowi doskonałego doświadczenia zakupowego, od momentu złożenia zamówienia, aż do odbioru paczki, a także zapewnienie pełnego wsparcia i troskę o zadowolenie naszych klientów, również i po zakupie.</p>
+            </div>
+
+            <div class="about__content">
+              <h2 class="title">Kim jesteśmy?</h2>
+
+              <p>Jest firmą od 2021 r. zajmującą się sprzedażą bielizny za pośrednictwem sklepu internetowego.W sierpniu 2021 roku e-sklep przeszedł znaczną modernizację. Platformą e-sklepu stał się Shopify podłączony do systemu informacyjnego Baselinker. </p>
+
+              <p>Podstawowym założeniem przy projektowaniu e-sklepu stała się pełna orientacja na kupujących – łatwe znalezienie pożądanej bielizny czy strojów kąpielowych, pomoc przy wyborze towaru, wysoka jakość i i szybko dostarczany asortyment w dobrej cenie, maksimum informacji w opisie towaru wraz ze zdjęciami w wysokiej rozdzielczości, proste i bezpieczne zakupy, a także zapewnienie niezawodnej obsługi klienta.</p>
+            </div>
+
+            <div class="about__clients">
+              Ponad <b>10.000 zadowolonych</b> klientów w ramach działania sklepu.
+            </div>
+
+            <ul class="about__details">
+              <li class="about__details-item">
+                <div class="about__details-title">Godziny pracy</div>
+
+                <p>Od poniedziałku do piątku: <br> 9:00 – 18:00</p>
+              </li>
+              <li class="about__details-item">
+                <div class="about__details-title">Informacje o firmy</div>
+
+                <p>Data rejestracji: 17.08.2021</p>
+                <p>Numer KRS: 0000917875</p>
+              </li>
+              <li class="about__details-item">
+                <div class="about__details-title">E-mail</div>
+
+                <a class="email" href="mailto:info@defi-home.eu">info@defi-home.eu</a>
+              </li>
+              <li class="about__details-item">
+                <div class="about__details-title">Dane identyfikacyjne</div>
+
+                <p>© 2021 – 2022 DeFi Group. Wszystkie ceny zawierają podatek VAT. Wszelkie prawa zastrzeżone</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html',{})
+  </div>
+
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

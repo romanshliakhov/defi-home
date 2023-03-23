@@ -1,0 +1,19 @@
+.divider {
+  background-color: var(--color-main);
+  padding: 8px 0 11px;
+
+  &__wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    font-weight: 700;
+    color: var(--color-white);
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.about {
+  padding: 30px 0 100px;
+
+  &__search {
+    max-width: 946px;
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+
+  &__wrapp {
+    max-width: 850px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    .title {
+      margin-bottom: 30px;
+    }
+
+    & + & {
+      margin-top: 60px;
+    }
+
+    p + p {
+      margin-top: 25px;
+    }
+  }
+
+  &__clients {
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px 25px;
+    background-color: var(--color-bg);
+    font-size: 22px;
+    line-height: 29px;
+    color: var(--color-nero);
+    text-align: center;
+  }
+
+  &__details {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  &__details-title {
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+  }
+}

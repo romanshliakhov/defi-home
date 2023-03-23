@@ -1,0 +1,28 @@
+.search {
+  &__label {
+    position: relative;
+    border: 1px solid #B0B4C3;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &__input {
+    padding-right: 30px;
+
+    &::placeholder {
+      color: var(--color-border);
+    }
+  }
+
+  &__categories {
+    position: relative;
+    flex-shrink: 0;
+    padding: 11px 30px 10px;
+    border-left: 1px solid #B0B4C3;
+  }
+}

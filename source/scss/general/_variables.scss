@@ -1,8 +1,14 @@
 :root {
     /* -- Fonts --*/
-  --font-family: "Mulish", sans-serif; // var(--font-family);
+  --font-family-poppins: "Poppins", sans-serif; // var(--font-family-poppins);
+  --font-family-raleway: "Raleway", sans-serif; // var(--font-family-raleway);
 
-
+    /* -- Colors --*/
+    --color-main: #223D69; // var(--color-main);
+    --color-white: #ffffff; // var(--color-white);
+    --color-border: #B0B4C3; // var(--color-border);
+    --color-bg: #EBF5FE; // var(--color-bg);
+    --color-nero: #282828; // var(--color-nero);
 }
 
 
