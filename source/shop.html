@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="Pl">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <section class="divider">
+        <div class="container">
+          <div class="divider__wrapp">
+            <div class="divider__content">
+              <span>Skontaktuj się z nami:</span>
+              <a class="email" href="mailto:info@defi-home.eu">info@defi-home.eu</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop">
+        <div class="container">
+          <form class="shop__search search">
+            <label class="search__label">
+              <input class="search__input" type="search" placeholder="Search products">
+              <div class="search__categories">All categories</div>
+            </label>
+          </form>
+
+          <div class="shop__wrapp">
+            <div class="shop__categories">
+              121234
+            </div>
+
+            <div class="shop__slider">
+              22222
+            </div>
+
+            <div class="shop__products">
+              <div class="shop__products-title title">Sezon na super zniżki!</div>
+
+              <ul class="shop__products-items">
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card1.webp'>
+                          <img width='270' height='270' src='img/card/card1.png' alt='Na sofie narożnej + 1 fotel'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Na sofie narożnej + 1 fotel</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card5.webp'>
+                          <img width='270' height='270' src='img/card/card5.png' alt='Zestaw Samochodowych'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Zestaw Samochodowych</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card6.webp'>
+                          <img width='270' height='270' src='img/card/card6.png' alt='Monokular/Lornetki'>
+                        </picture>
+                      </div>
+
+                      <!-- <div class="card__discount discount">
+                        -33%
+                      </div> -->
+                    </a>
+
+                    <a class="card__title" href="#">Monokular/Lornetki</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="current-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card7.webp'>
+                          <img width='270' height='270' src='img/card/card7.png' alt='Wędkas'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Wędka</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="shop__banner">
+              <div class="shop__banner-image">
+                <picture>
+                  <source type='image/webp' srcset='img/banners/udekoruj.webp'>
+                  <img width='1140' height='360' src='img/banners/udekoruj.png' alt=''>
+                </picture>
+              </div>
+
+              <div class="shop__banner-info">
+                <div class="shop__banner-title">Udekoruj swój dom!</div>
+
+                <button class="btn btn-more">Więcej</button>
+              </div>
+
+
+            </div>
+
+            <div class="shop__products">
+              <div class="shop__products-title title">Wszystkie bestsellery teraz jeszcze taniej</div>
+
+              <ul class="shop__products-items">
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card8.webp'>
+                          <img width='270' height='270' src='img/card/card8.png' alt='Składane latarnie'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Składane latarnie</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card5.webp'>
+                          <img width='270' height='270' src='img/card/card5.png' alt='Zestaw Samochodowych'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Zestaw Samochodowych</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card6.webp'>
+                          <img width='270' height='270' src='img/card/card6.png' alt='Monokular/Lornetki'>
+                        </picture>
+                      </div>
+
+                      <!-- <div class="card__discount discount">
+                        -33%
+                      </div> -->
+                    </a>
+
+                    <a class="card__title" href="#">Monokular/Lornetki</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="current-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card7.webp'>
+                          <img width='270' height='270' src='img/card/card7.png' alt='Wędkas'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Wędka</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="shop__products">
+              <div class="shop__products-title title">Wszystko, czego potrzebują matki i dzieci!</div>
+
+              <ul class="shop__products-items">
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card9.webp'>
+                          <img width='270' height='270' src='img/card/card9.png' alt='Składane latarnie'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Składane latarnie</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card10.webp'>
+                          <img width='270' height='270' src='img/card/card10.png' alt='Zestaw Samochodowych'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Zestaw Samochodowych</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card11.webp'>
+                          <img width='270' height='270' src='img/card/card11.png' alt='Monokular/Lornetki'>
+                        </picture>
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Monokular/Lornetki</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="current-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__products-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card12.webp'>
+                          <img width='270' height='270' src='img/card/card12.png' alt='Wędka'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Wędka</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html',{})
+  </div>
+
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

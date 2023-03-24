@@ -1,0 +1,43 @@
+.btn {
+  position: relative;
+  width: 100%;
+  padding: 23px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #125ED9;
+  border-radius: 5px;
+  font-family: var(--font-family-poppins);
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-white);
+  z-index: 3;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 95%;
+    height: 100%;
+    background: rgba(18, 94, 217, 0.4);
+    filter: blur(7px);
+    border-radius: 5px;
+    z-index: -1;
+  }
+
+  &-order {
+    max-width: 310px;
+  }
+
+  &-buy {
+    padding: 21px 0 20px;
+    max-width: 60px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &-more {
+    max-width: 237px;
+    font-weight: 700;
+  }
+}

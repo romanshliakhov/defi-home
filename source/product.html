@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="Pl">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <section class="product">
+        <div class="product__divider divider">
+          <div class="container">
+            <div class="divider__wrapp">
+              <div class="divider__content">
+                <span>Bezpłatna wysyłka na wszystkie zamówienia!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__hero">
+          <div class="container">
+            <div class="product__hero-wrapp">
+              Pokrowce na meble tapicerowane
+            </div>
+          </div>
+        </div>
+
+        <div class="product__advantages advantages">
+          <div class="advantages__head">
+            <span>Produkt polecany przez klientów!!</span>
+            Aż 98,6% klientów oceniło ten zakup z najwyższą możliwą oceną.
+          </div>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__item-head">
+                <span></span>
+                <svg width='60' height='60'>
+                  <use href='img/sprite/sprite.svg#dostava'></use>
+                </svg>
+              </div>
+
+              <p>Szybka dostawa</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-head">
+                <span></span>
+                <svg width='60' height='60'>
+                  <use href='img/sprite/sprite.svg#zakup'></use>
+                </svg>
+              </div>
+
+              <p>100% bezpieczny zakup</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-head">
+                <span></span>
+                <svg width='60' height='60'>
+                  <use href='img/sprite/sprite.svg#zwrotu'></use>
+                </svg>
+              </div>
+
+              <p>30-dniową gwarancję zwrotu</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-head">
+                <span></span>
+                <svg width='60' height='60'>
+                  <use href='img/sprite/sprite.svg#satysfakcji'></use>
+                </svg>
+              </div>
+
+              <p>Gwarancja 100% satysfakcji</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="product__describe">
+          <div class="container">
+            <div class="product__describe-wrapp">
+              <div class="product__describe-info">
+                <div class="product__describe-subtitle">Piękne, wygodne i w przystępnej cenie!</div>
+                <div class="product__describe-title">Chroń meble, ukrywaj wady i odnawiaj je w niedrogi sposób!</div>
+
+                <p class="product__describe-text">Zakup pokrowców na meble to najlepszy sposób na ochronę tapicerki sof, foteli, krzeseł i innych mebli tapicerowanych przed różnymi zabrudzeniami i zużyciem. Nasz sklep oferuje szeroki wybór pokrowców w różnych kolorach, pasujących do wszystkich rozmiarów i konfiguracji mebli.</p>
+
+                <div class="product__describe-sales">
+                  <span>Piękne, wygodne i w przystępnej cenie!</span>
+
+                  <ul class="product__describe-list">
+                    <li>na 1 fotel - 139 zł</li>
+                    <li>na sofie - 189 zł</li>
+                    <li>na sofie + 1 fotel - 259 zł</li>
+                    <li>na sofie + 2 fotele - 349 zł</li>
+                    <li>na sofie narożnej - 249 zł</li>
+                    <li>na sofie narożnej + 1 fotel - 329 zł</li>
+                    <li>na sofie narożnej + 2 fotel - 399 zł</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="product__describe-image">
+                <picture>
+                  <source type='image/webp' srcset='img/cenie.webp'>
+                  <img width='580' height='580' src='img/cenie.png' alt='Piękne, wygodne i w przystępnej cenie!'>
+                </picture>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="product__choose">
+          <div class="container">
+            <div class="product__choose-wrapp">
+              <h2 class="product__choose-title title">Wybierz swoją opcję i ciesz się!</h2>
+
+              <ul class="product__choose-items">
+                <li class="product__choose-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card1.webp'>
+                          <img width='270' height='270' src='img/card/card1.png' alt='Na sofie narożnej + 1 fotel'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Na sofie narożnej + 1 fotel</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__choose-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card2.webp'>
+                          <img width='270' height='270' src='img/card/card2.png' alt='Na sofie narożnej + 1 fotel'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Na sofie narożnej + 1 fotel</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__choose-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card3.webp'>
+                          <img width='270' height='270' src='img/card/card3.png' alt='Na sofie narożnej + 1 fotel'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Na sofie narożnej + 1 fotel</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__choose-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card4.webp'>
+                          <img width='270' height='270' src='img/card/card4.png' alt='Na sofie narożnej + 1 fotel'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Na sofie narożnej + 1 fotel</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__feature">
+          <div class="container">
+            <div class="product__feature-wrapp">
+              <h2 class="product__feature-title title">Cechy i charakterystyki</h2>
+
+              <ul class="product__feature-items">
+                <li class="product__feature-item">
+                  <div class="product__feature-image">
+                    <picture>
+                      <source type='image/webp' srcset='img/sofa1.webp'>
+                      <img width='560' height='447' src='img/sofa1.png' alt=''>
+                    </picture>
+                  </div>
+
+                  <ul class="product__feature-details" data-spollers data-one-spoller>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                        EXTRA JAKOŚĆ. Wyprodukowano w Turcji!
+                      </button>
+                      <div class="product__feature-text">
+                        Materiał: Gruba Dzianina. 90% miękkiego poliestru, 10% elastanu. Miękka tkanina o przyjaznym dla skóry pH. 100% hipoalergiczny.
+                      </div>
+                    </li>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                        Łatwy do usunięcia i wyprania, nie wymaga prasowania
+                      </button>
+                      <div class="product__feature-text">
+                        Materiał: Gruba Dzianina. 90% miękkiego poliestru, 10% elastanu. Miękka tkanina o przyjaznym dla skóry pH. 100% hipoalergiczny.
+                      </div>
+                    </li>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                        Tkanina Premium
+                      </button>
+                      <div class="product__feature-text">
+                        Materiał: Gruba Dzianina. 90% miękkiego poliestru, 10% elastanu. Miękka tkanina o przyjaznym dla skóry pH. 100% hipoalergiczny.
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="product__feature-item">
+                  <div class="product__feature-image">
+                    <picture>
+                      <source type='image/webp' srcset='img/sofa2.webp'>
+                      <img width='560' height='447' src='img/sofa2.png' alt=''>
+                    </picture>
+                  </div>
+
+                  <ul class="product__feature-details" data-spollers data-one-spoller>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                        Chroni przed brudem, kurzem i plamami
+                      </button>
+                      <div class="product__feature-text">
+                        Materiał: Gruba Dzianina. 90% miękkiego poliestru, 10% elastanu. Miękka tkanina o przyjaznym dla skóry pH. 100% hipoalergiczny.
+                      </div>
+                    </li>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                        Nie pozostawia plam na meblach
+                      </button>
+                      <div class="product__feature-text">
+                        Materiał: Gruba Dzianina. 90% miękkiego poliestru, 10% elastanu. Miękka tkanina o przyjaznym dla skóry pH. 100% hipoalergiczny.
+                      </div>
+                    </li>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                        Tkanina Premium
+                      </button>
+                      <div class="product__feature-text">
+                        Duża elastyczność tkaniny sprawia, że bez trudu znajdziemy odpowiedni pokrowiec na każdy mebel.
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-divider">
+          <div class="container">
+            <div class="product-divider__wrapp">
+              <span>Pospiesz się, zanim skończą się zapasy!</span>
+              <a class="btn btn-order" href="#">Złóż zamówienie</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__feedbacks">
+          Szczęśliwi klienci i ich opinie
+        </div>
+
+        <div class="product__bot">
+          Pokrowce na meble tapicerowane
+        </div>
+
+        <div class="product__faq faq">
+          <h2 class="faq__title">FAQ - Często Zadawane Pytania</h2>
+          <p class="faq__descr">Odpowiadamy natychmiast na wszystkie pytania: <a class="email" href="mailto:info@defi-home.eu">info@defi-home.eu</a></p>
+
+          <ul class="faq__accordion" data-spollers data-one-spoller>
+            <li class="faq__accordion-item">
+              <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                <span>Ile wynosi koszt przesyłki?</span>
+                <svg width='14' height='7'>
+                  <use href='img/sprite/sprite.svg#agile'></use>
+                </svg>
+              </button>
+              <div class="faq__answer">
+                Koszty wysyłki wynoszą 0,00ZŁ. W przypadku płatności przy odbiorze firma kurierska pobierze prowizję w wysokości 14,99ZŁ.
+              </div>
+            </li>
+            <li class="faq__accordion-item">
+              <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                <span>Jakie są dostępne metody płatności?</span>
+                <svg width='14' height='7'>
+                  <use href='img/sprite/sprite.svg#agile'></use>
+                </svg>
+              </button>
+              <div class="faq__answer">
+                Koszty wysyłki wynoszą 0,00ZŁ. W przypadku płatności przy odbiorze firma kurierska pobierze prowizję w wysokości 14,99ZŁ.
+              </div>
+            </li>
+            <li class="faq__accordion-item">
+              <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                <span>Kiedy otrzymam zamówiony produkt?</span>
+                <svg width='14' height='7'>
+                  <use href='img/sprite/sprite.svg#agile'></use>
+                </svg>
+              </button>
+              <div class="faq__answer">
+                Koszty wysyłki wynoszą 0,00ZŁ. W przypadku płatności przy odbiorze firma kurierska pobierze prowizję w wysokości 14,99ZŁ.
+              </div>
+            </li>
+            <li class="faq__accordion-item">
+              <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                <span>Kto jest odpowiedzialny za dostawę?</span>
+                <svg width='14' height='7'>
+                  <use href='img/sprite/sprite.svg#agile'></use>
+                </svg>
+              </button>
+              <div class="faq__answer">
+                Koszty wysyłki wynoszą 0,00ZŁ. W przypadku płatności przy odbiorze firma kurierska pobierze prowizję w wysokości 14,99ZŁ.
+              </div>
+            </li>
+            <li class="faq__accordion-item">
+              <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                <span>Czy mogę zwrócić zamówiony produkt?</span>
+                <svg width='14' height='7'>
+                  <use href='img/sprite/sprite.svg#agile'></use>
+                </svg>
+              </button>
+              <div class="faq__answer">
+                Koszty wysyłki wynoszą 0,00ZŁ. W przypadku płatności przy odbiorze firma kurierska pobierze prowizję w wysokości 14,99ZŁ.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html',{})
+  </div>
+
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
