@@ -21,7 +21,102 @@
         <div class="product__hero">
           <div class="container">
             <div class="product__hero-wrapp">
-              Pokrowce na meble tapicerowane
+              <div class="product__hero-slider swiper-container">
+                <ul class="product__hero-wrapper swiper-wrapper">
+                  <li class="product__hero-slide swiper-slide">
+                    <div class="product__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product.webp'>
+                        <img width='560' height='560' src='img/product.png' alt='Pokrowce na meble tapicerowane'>
+                      </picture>
+
+                      <div class="discount">
+                        -33%
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="product__slider-btns">
+                  <div class="product__slider-btn product__slider-btn--prev">
+                    <svg width='18' height='30'>
+                      <use href='img/sprite/sprite.svg#arrow-left'></use>
+                    </svg>
+                  </div>
+                  <div class="product__slider-btn product__slider-btn--next">
+                    <svg width='18' height='30'>
+                      <use href='img/sprite/sprite.svg#arrow-right'></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product__hero-info">
+                <div class="product__name">Pokrowce na meble tapicerowane</div>
+
+                <div class="product__feedback">
+                  EMILIA JANKOWSKA
+                </div>
+
+                <div class="product__pricelist">
+                  <div class="discount">
+                    -33%
+                  </div>
+                  <div class="old-price"><span>207</span> zł</div>
+                  <div class="new-price"><span>139</span> zł</div>
+                </div>
+
+                <div class="product__amounts">
+                  <svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#box'></use>
+                  </svg>
+                  <span>Zostało mniej niż <span class="amount">14</span> sztuk!</span>
+                </div>
+
+                <button class="product__booking btn btn-booking">Złóż zamówienie</button>
+
+                <div class="product__bot">
+                  <div class="product__info-payment">
+                    <svg width='22' height='22'>
+                      <use href='img/sprite/sprite.svg#payment'></use>
+                    </svg>
+                    <span>Płatność przy odbiorze</span>
+                  </div>
+
+                  <ul class="payments">
+                    <li class="payments__item">
+                      <picture>
+                        <source type='image/webp' srcset='img/payments/dotpay.webp'>
+                        <img width='51' height='17' src='img/payments/dotpay.png' alt='dotpay'>
+                      </picture>
+                    </li>
+                    <li class="payments__item">
+                      <picture>
+                        <source type='image/webp' srcset='img/payments/visa.webp'>
+                        <img width='51' height='17' src='img/payments/visa.png' alt='visa'>
+                      </picture>
+                    </li>
+                    <li class="payments__item">
+                      <picture>
+                        <source type='image/webp' srcset='img/payments/mastercard.webp'>
+                        <img width='29' height='17' src='img/payments/mastercard.png' alt='mastercard'>
+                      </picture>
+                    </li>
+                    <li class="payments__item">
+                      <picture>
+                        <source type='image/webp' srcset='img/payments/express.webp'>
+                        <img width='51' height='17' src='img/payments/express.png' alt='express'>
+                      </picture>
+                    </li>
+                    <li class="payments__item">
+                      <picture>
+                        <source type='image/webp' srcset='img/payments/blik.webp'>
+                        <img width='39' height='17' src='img/payments/blik.png' alt='blik'>
+                      </picture>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -245,7 +340,7 @@
 
                   <ul class="product__feature-details" data-spollers data-one-spoller>
                     <li class="product__feature-detail">
-                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                      <button class="product__feature-heading _active" tabindex="-1" type="button" data-spoller>
                         EXTRA JAKOŚĆ. Wyprodukowano w Turcji!
                       </button>
                       <div class="product__feature-text">
@@ -323,8 +418,63 @@
           Szczęśliwi klienci i ich opinie
         </div>
 
-        <div class="product__bot">
-          Pokrowce na meble tapicerowane
+        <div class="product__bottom">
+          <div class="container">
+            <div class="product__bottom-wrapp">
+              <div class="product__image">
+                <picture>
+                  <source type='image/webp' srcset='img/product.webp'>
+                  <img width='560' height='560' src='img/product.png' alt='Pokrowce na meble tapicerowane'>
+                </picture>
+              </div>
+
+              <div class="product__bottom-info">
+                <div class="product__name">Pokrowce na meble tapicerowane</div>
+
+                <ul class="product__gross">
+                  <li class="product__gross-item">
+                    <div class="product__gross-head">Ilość:</div>
+
+                    <div class="product__gross-body">
+                      <b>1x 139 zł</b>/szt.
+                    </div>
+                  </li>
+                  <li class="product__gross-item">
+                    <div class="product__gross-head">Popularna oferta</div>
+
+                    <div class="product__gross-body">
+                      <b>2x 118.15 zł</b>/szt.
+                    </div>
+                  </li>
+                  <li class="product__gross-item">
+                    <div class="product__gross-head">Najlepsza oferta</div>
+
+                    <div class="product__gross-body">
+                      <b>3x 111.20 zł</b>/szt.
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="product__pricelist">
+                  <div class="discount">
+                    -33%
+                  </div>
+                  <div class="old-price"><span>207</span> zł</div>
+                  <div class="new-price"><span>139</span> zł</div>
+                </div>
+
+                <div class="product__amounts">
+                  <svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#box'></use>
+                  </svg>
+                  <span>Zostało mniej niż <span class="amount">14</span> sztuk!</span>
+                </div>
+
+                <button class="product__booking btn btn-booking">Złóż zamówienie</button>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div class="product__faq faq">

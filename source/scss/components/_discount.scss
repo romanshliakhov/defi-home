@@ -1,8 +1,10 @@
 .discount {
   padding: 2px 8px;
   height: fit-content;
+  width: max-content;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--color-orange);
   border-radius: 4px;
   font-family: var(--font-family-raleway);
