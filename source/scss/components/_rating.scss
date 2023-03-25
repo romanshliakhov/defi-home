@@ -1,0 +1,24 @@
+.rating {
+  display: flex;
+  align-items: center;
+  grid-gap: 8px;
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    grid-gap: 4px;
+
+    li {
+      display: flex;
+    }
+  }
+
+  &__summary {
+    padding: 1px 9px;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--color-white);
+    background-color: var(--color-green-light);
+    border-radius: 2px;
+  }
+}

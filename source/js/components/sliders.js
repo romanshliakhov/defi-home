@@ -13,6 +13,19 @@ for (const container of  document.querySelectorAll('.container') ) {
       clickable: true,
     }
   });
+
+  let feedbacksSlider = new Swiper(container.querySelector('.product__feedbacks-slider'), {
+    slidesPerView: 4,
+    loop: true,
+    freeMode: true,
+    adaptiveHeight: true,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
 }
 
 
