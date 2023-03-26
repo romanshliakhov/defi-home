@@ -789,22 +789,63 @@
                   <span>Zostało mniej niż <span class="amount">14</span> sztuk!</span>
                 </div>
 
-                <div class="product__variants">
-                  <div class="product__variant">
-                    <div class="product__variant-title">
-                      <svg width='15' height='15'>
-                        <use href='img/sprite/sprite.svg#alert'></use>
-                      </svg>
-                      <span>Wybierz swój Zestaw</span>
+                <form class="product__variants">
+                  <div class="product__variants-items">
+                    <div class="product__variant">
+                      <div class="product__variant-title">
+                        <svg width='15' height='15'>
+                          <use href='img/sprite/sprite.svg#alert'></use>
+                        </svg>
+                        <span>Wybierz swój Zestaw</span>
+                      </div>
+
+                      <div class="product__variant-select select">
+                        <div class="product__variant-header select__header">
+                          <span class="product__variant-current select__current">
+                            Wybierz opcjęna
+                          </span>
+                          <svg width='14' height='7'>
+                            <use href='img/sprite/sprite.svg#arrow-down'></use>
+                          </svg>
+                        </div>
+
+                        <ul class="product__variant-body select__body">
+                          <li class="product__variant-item" data-choice='choosen'>1</li>
+                          <li class="product__variant-item" data-choice='choosen'>2</li>
+                          <li class="product__variant-item" data-choice='choosen'>3</li>
+                        </ul>
+                      </div>
                     </div>
 
-                    <div class="product__variant-choose">
-                      Wybierz opcjęna
+                    <div class="product__variant">
+                      <div class="product__variant-title">
+                        <svg width='15' height='15'>
+                          <use href='img/sprite/sprite.svg#alert'></use>
+                        </svg>
+                        <span>Wybierz swój Color</span>
+                      </div>
+
+                      <div class="product__variant-select select">
+                        <div class="product__variant-header select__header">
+                          <span class="product__variant-current select__current">
+                            Wybierz color
+                          </span>
+                          <svg width='14' height='7'>
+                            <use href='img/sprite/sprite.svg#arrow-down'></use>
+                          </svg>
+                        </div>
+
+                        <ul class="product__variant-body select__body">
+                          <li class="product__variant-item" data-choice='choosen'>red</li>
+                          <li class="product__variant-item" data-choice='choosen'>kakaowy</li>
+                          <li class="product__variant-item" data-choice='choosen'>blue</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <button class="product__booking btn btn-booking">Złóż zamówienie</button>
+                  <button class="btn btn-booking" type="submit">Złóż zamówienie</button>
+                </form>
               </div>
             </div>
           </div>

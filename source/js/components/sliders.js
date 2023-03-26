@@ -37,6 +37,23 @@ for (const container of  document.querySelectorAll('.container') ) {
     },
   });
 
+  let shopCategoriesSlider = new Swiper(container.querySelector('.shop__categories'), {
+    slidesPerView: 'auto',
+    spaceBetween: 6,
+    loop: true,
+    // freeMode: true,
+    adaptiveHeight: true,
+    pagination: {
+      // el: ".swiper-pagination",
+      // type: "progressbar",
+      // clickable: true,
+
+      el: ".swiper-scrollbar",
+      draggable: true,
+      // clickable: true,
+    },
+  });
+
 }
 
 
