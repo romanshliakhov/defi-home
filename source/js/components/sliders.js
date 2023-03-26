@@ -26,6 +26,17 @@ for (const container of  document.querySelectorAll('.container') ) {
     },
   });
 
+  let shopBannerSlider = new Swiper(container.querySelector('.shop__slider'), {
+    slidesPerView: 1,
+    loop: true,
+    // freeMode: true,
+    adaptiveHeight: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
 }
 
 
