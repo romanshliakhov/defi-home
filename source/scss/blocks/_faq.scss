@@ -10,6 +10,8 @@
 
   &__title {
     margin-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
   }
 
   &__descr {
@@ -27,7 +29,7 @@
   }
 
   &__accordion-item {
-    padding: 20px 30px;
+    padding: 20px clamp(15px, 2.632vw, 30px);
     width: 100%;
     background-color: var(--color-bg);
     border-radius: 5px;

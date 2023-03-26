@@ -1,6 +1,6 @@
 .shop {
   &__search {
-    margin-bottom: 30px;
+    margin-bottom: clamp(20px, 2.632vw, 30px);
   }
 
   &__products {
@@ -16,17 +16,24 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 20px;
+
+      @media (max-width: 1240px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
+
+
   }
 
   &__banner {
-    margin-bottom: 80px;
+    margin-bottom: clamp(60px, 7.018vw, 80px);
     position: relative;
   }
 
   &__banner-image {
     position: relative;
     display: flex;
+    height: 360px;
 
     picture,
     img {
@@ -45,6 +52,13 @@
       background: linear-gradient(90deg, #223D69 0%, rgba(34, 61, 105, 0) 100%);
       border-radius: 5px;
       transform: matrix(1, 0, 0, -1, 0, 0);
+
+      @media (max-width: 768px) {
+        height: 170px;
+        width: 100%;
+        top: 0;
+        background: linear-gradient(0deg, #223D69 0%, rgba(34, 61, 105, 0) 100%);
+      }
     }
   }
 
@@ -58,23 +72,38 @@
     align-items: center;
     justify-content: center;
     grid-gap: 35px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      top: 0%;
+      transform: translateX(-50%) translateY(0);
+      grid-gap: initial;
+      justify-content: space-between;
+      padding: 30px 0;
+    }
   }
 
   &__banner-title {
     position: relative;
-    font-size: 32px;
-    line-height: 43px;
+    font-size: clamp(22px, 2.807vw, 32px);
+    line-height: clamp(29px, 3.772vw, 43px);
     font-weight: 700;
     color: var(--color-white);
   }
 
   &__categories {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: clamp(30px, 4.386vw, 50px);
     display: flex;
     flex-direction: column;
     align-items: center;
     grid-gap: 20px;
+
+    @media (max-width: 768px) {
+      width: 100vw;
+    }
   }
 
   &__categories-slide {
@@ -135,6 +164,17 @@
 
     .swiper-pagination-bullet-active {
       background-color: var(--color-blue);
+    }
+  }
+
+  &__slider-info {
+    height: 100%;
+
+    picture,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 

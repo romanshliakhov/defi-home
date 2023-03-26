@@ -9,22 +9,22 @@
 }
 
 .old-price {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: clamp(16px, 1.579vw, 18px);
+  line-height: clamp(21px, 2.105vw, 24px);
   font-weight: 900;
   text-decoration-line: line-through;
 }
 
 .new-price {
-  font-size: 30px;
-  line-height: 41px;
+  font-size: clamp(24px, 2.632vw, 30px);
+  line-height: clamp(32px, 3.596vw, 41px);
   font-weight: 900;
   color: var(--color-orange);
 }
 
 .current-price {
-  font-size: 30px;
-  line-height: 41px;
+  font-size: clamp(24px, 2.632vw, 30px);
+  line-height: clamp(32px, 3.596vw, 41px);
   font-weight: 900;
 }
 

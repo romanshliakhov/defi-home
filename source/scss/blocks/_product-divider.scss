@@ -1,5 +1,5 @@
 .product-divider {
-  margin-bottom: 80px;
+  margin-bottom: clamp(40px, 7.018vw, 80px);
   background-color: var(--color-main);
   padding: 40px 0 30px;
 
@@ -8,13 +8,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     grid-gap: 20px;
     font-weight: 700;
     color: var(--color-white);
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     span {
-      font-size: 38px;
-      line-height: 51px;
+      font-size: clamp(25px, 3.333vw, 38px);
+      line-height: clamp(34px, 4.474vw, 51px);
     }
   }
 }

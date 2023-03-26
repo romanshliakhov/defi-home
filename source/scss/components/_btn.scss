@@ -30,8 +30,8 @@
   }
 
   &-buy {
-    padding: 21px 0 20px;
-    max-width: 60px;
+    padding: clamp(16px, 1.842vw, 21px) 0 clamp(15px, 1.754vw, 20px);
+    width: clamp(50px, 5.263vw, 60px);
     font-size: 14px;
     line-height: 19px;
   }
@@ -43,6 +43,10 @@
 
   &-booking {
     max-width: 237px;
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
   }
 
   &-send {
