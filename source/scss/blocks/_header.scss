@@ -1,6 +1,6 @@
 header {
   position: relative;
-  padding: 12px 0;
+  padding: clamp(10px, 1.053vw, 12px) 0;
 }
 
 .header {
@@ -18,12 +18,33 @@ header {
     align-items: center;
 
     span {
-      line-height: 24px;
+      font-size: clamp(14px, 1.404vw, 16px);
+      line-height: clamp(21px, 2.105vw, 24px);
     }
 
     a {
-      line-height: 24px;
+      font-size: clamp(14px, 1.404vw, 16px);
+      line-height: clamp(21px, 2.105vw, 24px);
       font-weight: 700;
+    }
+
+    @media (max-width: 769px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: initial;
+    }
+  }
+
+  &__logo {
+    width: clamp(110px, 16.14vw, 184px);
+    // height: 30px;
+
+    img,
+    picture {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }

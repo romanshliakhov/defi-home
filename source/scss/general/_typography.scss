@@ -1,7 +1,11 @@
 .title {
-  font-size: 38px;
-  line-height: 51px;
+  font-size: clamp(25px, 3.333vw, 38px);
+  line-height: clamp(34px, 4.474vw, 51px);
   font-weight: 700;
+
+  @media (max-width: 769px) {
+    text-align: center;
+  }
 }
 
 .old-price {

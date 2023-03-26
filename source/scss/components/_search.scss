@@ -2,7 +2,7 @@
   max-width: 946px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: clamp(20px, 2.632vw, 30px);
   display: flex;
   align-items: center;
 
@@ -19,7 +19,7 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     // border-right: none;
-    padding: 11px 30px 10px;
+    padding: 11px clamp(20px, 2.632vw, 30px) 10px;
     font-size: 14px;
     line-height: 19px;
 
@@ -31,12 +31,13 @@
   &__categories {
     position: relative;
     flex-shrink: 0;
-    width: 173px;
-    padding: 11px 30px 10px;
+    padding: 11px clamp(15px, 2.632vw, 30px) 10px;
     border-radius: 35px;
     border: 1px solid var(--color-border);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    font-size: 14px;
+    line-height: 19px;
   }
 
   &__categories-header {
