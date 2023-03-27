@@ -750,10 +750,7 @@
   &__methods-title {
     margin-bottom: 20px;
     font-weight: 700;
-
-    @media (max-width: 768px) {
-      text-align: center;
-    }
+    text-align: center;
   }
 
   &__methods {
