@@ -740,39 +740,18 @@
         <div class="product__bottom">
           <div class="container">
             <div class="product__bottom-wrapp">
-              <div class="product__image">
-                <picture>
-                  <source type='image/webp' srcset='img/product.webp'>
-                  <img width='560' height='560' src='img/product.png' alt='Pokrowce na meble tapicerowane'>
-                </picture>
-              </div>
-
-              <div class="product__bottom-info">
+              <div class="product__bottom-left">
                 <div class="product__name">Pokrowce na meble tapicerowane</div>
 
-                <ul class="product__gross">
-                  <li class="product__gross-item">
-                    <div class="product__gross-head">Ilość:</div>
-
-                    <div class="product__gross-body">
-                      <b>1x 139 zł</b>/szt.
-                    </div>
-                  </li>
-                  <li class="product__gross-item">
-                    <div class="product__gross-head">Popularna oferta</div>
-
-                    <div class="product__gross-body">
-                      <b>2x 118.15 zł</b>/szt.
-                    </div>
-                  </li>
-                  <li class="product__gross-item">
-                    <div class="product__gross-head">Najlepsza oferta</div>
-
-                    <div class="product__gross-body">
-                      <b>3x 111.20 zł</b>/szt.
-                    </div>
-                  </li>
-                </ul>
+                <div class="product__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/product.webp'>
+                    <img width='560' height='560' src='img/product.png' alt='Pokrowce na meble tapicerowane'>
+                  </picture>
+                  <div class="discount">
+                    -33%
+                  </div>
+                </div>
 
                 <div class="product__pricelist">
                   <div class="discount">
@@ -788,65 +767,136 @@
                   </svg>
                   <span>Zostało mniej niż <span class="amount">14</span> sztuk!</span>
                 </div>
-
-                <form class="product__variants">
-                  <div class="product__variants-items">
-                    <div class="product__variant">
-                      <div class="product__variant-title">
-                        <svg width='15' height='15'>
-                          <use href='img/sprite/sprite.svg#alert'></use>
-                        </svg>
-                        <span>Wybierz swój Zestaw</span>
-                      </div>
-
-                      <div class="product__variant-select select">
-                        <div class="product__variant-header select__header">
-                          <span class="product__variant-current select__current">
-                            Wybierz opcjęna
-                          </span>
-                          <svg width='14' height='7'>
-                            <use href='img/sprite/sprite.svg#arrow-down'></use>
-                          </svg>
-                        </div>
-
-                        <ul class="product__variant-body select__body">
-                          <li class="product__variant-item" data-choice='choosen'>1</li>
-                          <li class="product__variant-item" data-choice='choosen'>2</li>
-                          <li class="product__variant-item" data-choice='choosen'>3</li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="product__variant">
-                      <div class="product__variant-title">
-                        <svg width='15' height='15'>
-                          <use href='img/sprite/sprite.svg#alert'></use>
-                        </svg>
-                        <span>Wybierz swój Color</span>
-                      </div>
-
-                      <div class="product__variant-select select">
-                        <div class="product__variant-header select__header">
-                          <span class="product__variant-current select__current">
-                            Wybierz color
-                          </span>
-                          <svg width='14' height='7'>
-                            <use href='img/sprite/sprite.svg#arrow-down'></use>
-                          </svg>
-                        </div>
-
-                        <ul class="product__variant-body select__body">
-                          <li class="product__variant-item" data-choice='choosen'>red</li>
-                          <li class="product__variant-item" data-choice='choosen'>kakaowy</li>
-                          <li class="product__variant-item" data-choice='choosen'>blue</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <button class="btn btn-booking" type="submit">Złóż zamówienie</button>
-                </form>
               </div>
+
+              <form class="product__form">
+                <div class="product__form-title">Formularz zamówienia</div>
+
+                <div class="product__form-top">
+                  <label>
+                    <input type="text" name="name" placeholder="Imię Nazwisko">
+                  </label>
+                  <label>
+                    <input type="adress" name="adress" placeholder="Kod pocztowy, miasto, nazwa ulicy...">
+                  </label>
+                  <label>
+                    <input type="tel" name="tel" placeholder="Numer telefonu*">
+                  </label>
+                </div>
+
+                <div class="product__form-methods">
+                  <div class="product__methods-title">Metoda płatności:</div>
+
+                  <div class="product__methods">
+                    <label>
+                      <input type="radio" name="method" checked>
+                      <span>Płatność przy odbiorze (15,99)</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="method">
+                      <span>Dotpay (0 zl)</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="method">
+                      <span>Płatność kartą (0 zl)</span>
+                    </label>
+                  </div>
+                </div>
+
+                <button class="btn btn-buynow">Kup teraz</button>
+
+                <div class="product__delivery">
+                  <label>
+                    <input type="radio" name="delivery" checked>
+                    <span class="product__delivery-info">
+                      <span class="product__delivery-details">
+                        <span class="product__delivery-head">Standardowa <br> dostawa</span>
+                        <span class="product__delivery-subtitle">Niedziela, <span>19.03</span></span>
+                      </span>
+
+                      <span class="product__delivery-pricing">
+                        <span class="product__delivery-price"><span>0</span> ZŁ</span>
+                        <span class="product__delivery-icons">
+                          <picture>
+                            <source type='image/webp' srcset='img/inpost.webp'>
+                            <img width='25' height='14' src='img/inpost.png' alt='inpost'>
+                          </picture>
+                        </span>
+                      </span>
+                    </span>
+                  </label>
+                  <label>
+                    <input type="radio" name="delivery">
+                    <span class="product__delivery-info">
+                      <span class="product__delivery-details">
+                        <span class="product__delivery-head">Obsługa <br> priorytetowa</span>
+                        <span class="product__delivery-subtitle">Piątek-Sobota, <span>17.03-18.03</span></span>
+                      </span>
+
+                      <span class="product__delivery-pricing">
+                        <span class="product__delivery-price"><span>9,99</span> ZŁ</span>
+                        <span class="product__delivery-icons">
+                          <svg width='21' height='16'>
+                            <use href='img/sprite/sprite.svg#delivery'></use>
+                          </svg>
+                          <picture>
+                            <source type='image/webp' srcset='img/inpost.webp'>
+                            <img width='25' height='14' src='img/inpost.png' alt='inpost'>
+                          </picture>
+                        </span>
+                      </span>
+                    </span>
+                  </label>
+                </div>
+
+                <div class="product__form-extra">
+                  <label>
+                    <input type="checkbox" name="gwarancję">
+                    <span class="product__extra-info">
+                      <span class="product__extra-details">
+                        <span class="product__extra-head">
+                          <svg width='36' height='30'>
+                            <use href='img/sprite/sprite.svg#garanties'></use>
+                          </svg>
+                          <span>1 rok gwarancji</span>
+                        </span>
+                        <p>Przedłużenie standardowych warunków gwarancji producenta</p>
+                      </span>
+
+                      <span class="product__extra-pricing">
+                        <span class="product__extra-price"><span>9,99 </span> ZŁ</span>
+                        <span class="product__extra-pick">
+                          <span>DODAJ</span>
+                          <!-- <span>DODAne</span> -->
+                        </span>
+                      </span>
+                    </span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="gwarancję">
+                    <span class="product__extra-info">
+                      <span class="product__extra-details">
+                        <span class="product__extra-head">
+                          <svg width='36' height='30'>
+                            <use href='img/sprite/sprite.svg#garanties'></use>
+                          </svg>
+                          <span>Ubezpieczenie przesyłki</span>
+                        </span>
+                        <p>Ubezpiecz przesyłkę przed uszkodzeniem</p>
+                      </span>
+
+                      <span class="product__extra-pricing">
+                        <span class="product__extra-price"><span>4,99 </span> ZŁ</span>
+                        <span class="product__extra-pick">
+                          <!-- <span>DODAJ</span> -->
+                          <span class="add">DODAne</span>
+                        </span>
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </form>
             </div>
           </div>
 

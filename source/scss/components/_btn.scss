@@ -10,6 +10,7 @@
   font-family: var(--font-family-poppins);
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
   color: var(--color-white);
   z-index: 3;
 
@@ -51,5 +52,9 @@
 
   &-send {
     max-width: 330px;
+  }
+
+  &-buynow {
+
   }
 }

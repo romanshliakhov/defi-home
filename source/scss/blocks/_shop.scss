@@ -15,10 +15,31 @@
       width: 100%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 20px;
+      grid-gap: clamp(10px, 1.754vw, 20px);
 
       @media (max-width: 1240px) {
         grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &--season {
+      @media (max-width: 576px) {
+        li:first-child {
+          grid-column: span 2;
+
+          .card-banner {
+            max-height: 360px;
+          }
+
+          .card-banner__image {
+            max-height: 360px;
+
+            picture,
+            img {
+              max-height: 360px;
+            }
+          }
+        }
       }
     }
 
@@ -118,6 +139,10 @@
     align-items: center;
     height: 1px;
     background-color: #B0B4C3;
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
 
     .swiper-pagination-bullet {
       display: block;
