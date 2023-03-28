@@ -65,10 +65,14 @@ footer {
     display: flex;
     align-items: center;
     grid-gap: 17px;
+    font-size: clamp(14px, 1.404vw, 16px);
+    line-height: 19px;
   }
 
   &__adv-image {
     flex-shrink: 0;
+    display: flex;
+    min-width: 48px;
 
     picture,
     img {
