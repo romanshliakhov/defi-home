@@ -14,22 +14,32 @@ for (const container of  document.querySelectorAll('.container') ) {
     }
   });
 
-  let feedbacksSlider = new Swiper(container.querySelector('.product__feedbacks-slider'), {
-    slidesPerView: 4,
-    loop: true,
-    freeMode: true,
-    adaptiveHeight: true,
-    spaceBetween: 20,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+  // let feedbacksSlider = new Swiper(container.querySelector('.product__feedbacks-slider'), {
+  //   slidesPerView: 4,
+  //   loop: true,
+  //   freeMode: true,
+  //   adaptiveHeight: true,
+  //   spaceBetween: 20,
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //   },
+  //   breakpoints: {
+  //     576: {
+  //       slidesPerView: 2,
+  //     },
+  //     768: {
+  //       slidesPerView: 3,
+  //     },
+  //     1240: {
+  //       slidesPerView: 4,
+  //     }
+  //   }
+  // });
 
   let shopBannerSlider = new Swiper(container.querySelector('.shop__slider'), {
     slidesPerView: 1,
     loop: true,
-    // freeMode: true,
     adaptiveHeight: true,
     pagination: {
       el: ".swiper-pagination",
@@ -41,18 +51,61 @@ for (const container of  document.querySelectorAll('.container') ) {
     slidesPerView: 'auto',
     spaceBetween: 6,
     loop: true,
-    // freeMode: true,
     adaptiveHeight: true,
     pagination: {
-      // el: ".swiper-pagination",
-      // type: "progressbar",
-      // clickable: true,
-
       el: ".swiper-scrollbar",
       draggable: true,
-      // clickable: true,
     },
   });
+}
+
+for (const feedbacksSlider of document.querySelectorAll('.product__feedbacks-slider')) {
+  if (feedbacksSlider) {
+    (function () {
+      "use strict";
+
+      const breakpoint = window.matchMedia("(max-width:576px)");
+      let slider;
+
+      const enableSwiper = function () {
+        slider = new Swiper(feedbacksSlider, {
+          slidesPerView: 4,
+          loop: true,
+          freeMode: true,
+          adaptiveHeight: true,
+          spaceBetween: 20,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            576: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1240: {
+              slidesPerView: 4,
+            },
+          }
+        });
+      };
+
+      const breakpointChecker = function () {
+        if (breakpoint.matches === true) {
+          if (slider !== undefined) slider.destroy(true, true);
+
+          return;
+        } else if (breakpoint.matches === false) {
+          return enableSwiper();
+        }
+      };
+
+      breakpoint.addListener(breakpointChecker);
+      breakpointChecker();
+    })();
+  }
 
 }
 
