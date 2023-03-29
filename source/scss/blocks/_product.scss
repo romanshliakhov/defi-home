@@ -627,13 +627,6 @@
         background-color: transparent;
         border-bottom: 3px solid var(--color-red);
       }
-
-      .product__gross-body {
-        color: var(--color-white);
-        background-color: var(--color-main);
-        border-bottom: 2px solid transparent;
-        border-right: 2px solid transparent;
-      }
     }
 
     &:last-child {
@@ -655,11 +648,14 @@
   }
 
   &__gross-body {
+    display: block;
     width: 100%;
     padding: 14px 0;
+    cursor: pointer;
     color: var(--color-black);
     border-bottom: 2px solid var(--color-describe);
     border-right: 2px solid var(--color-describe);
+    transition: all 0.4s ease;
 
     @media (max-width: 576px) {
       padding: 10px 0;
@@ -667,6 +663,20 @@
       b {
         display: block;
       }
+    }
+  }
+
+  &__gross-radio {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    &:checked ~ span {
+      color: var(--color-white);
+      border-bottom: 2px solid transparent;
+      border-right: 2px solid transparent;
+      background-color: var(--color-main);
     }
   }
 
