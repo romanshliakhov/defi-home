@@ -8,7 +8,9 @@ let selectScript = function (select) {
             const el = event.target.dataset.choice;
             const text = event.target.innerText;
             if (el === "choosen" && selectCurrent.innerHTML !== text) {
-                selectCurrent.innerText = text;
+              selectCurrent.innerText = text;
+              selectCurrent.style.color = "#282828";
+
             }
             item.classList.toggle("is-active");
         });
