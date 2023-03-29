@@ -19,11 +19,28 @@
       </section>
       <section class="about">
         <div class="container">
-          <form class="about__search search">
-            <label class="search__label">
-              <input class="search__input" type="search" placeholder="Search products">
-              <div class="search__categories">All categories</div>
-            </label>
+          <form class="shop__search search">
+            <fieldset>
+              <label class="search__label">
+                <input class="search__input" type="search" placeholder="Search products">
+              </label>
+              <div class="search__categories select">
+                <div class="search__categories-header select__header">
+                  <span class="search__categories-current select__current">
+                    All categories
+                  </span>
+                  <svg width='14' height='7'>
+                    <use href='img/sprite/sprite.svg#arrow-down'></use>
+                  </svg>
+                </div>
+
+                <ul class="search__categories-body select__body">
+                  <li class="search__categories-item" data-choice='choosen'>Category 1</li>
+                  <li class="search__categories-item" data-choice='choosen'>Category 2</li>
+                  <li class="search__categories-item" data-choice='choosen'>Category 3</li>
+                </ul>
+              </div>
+            </fieldset>
           </form>
 
           <div class="about__wrapp">
