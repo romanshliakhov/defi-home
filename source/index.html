@@ -7,7 +7,871 @@
     @include('partials/header.html',{})
 
     <main class="main">
-      <p>Defi</p>
+      <section class="product">
+        <div class="product__divider divider">
+          <div class="container">
+            <div class="divider__wrapp">
+              <div class="divider__content">
+                <span>Bezpłatna wysyłka na wszystkie zamówienia!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__hero">
+          <div class="container">
+            <div class="product__hero-wrapp">
+              <div class="product__hero-slider swiper-container">
+                <ul class="product__hero-wrapper swiper-wrapper">
+                  <li class="product__hero-slide swiper-slide">
+                    <div class="product__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product.webp'>
+                        <img width='560' height='560' src='img/product.png' alt='Pokrowce na meble tapicerowane'>
+                      </picture>
+
+                      <div class="discount">
+                        -33%
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="product__slider-btns">
+                  <div class="product__slider-btn product__slider-btn--prev">
+                    <svg width='18' height='30'>
+                      <use href='img/sprite/sprite.svg#arrow-left'></use>
+                    </svg>
+                  </div>
+                  <div class="product__slider-btn product__slider-btn--next">
+                    <svg width='18' height='30'>
+                      <use href='img/sprite/sprite.svg#arrow-right'></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product__hero-info">
+                <div class="product__name">Pokrowce na meble tapicerowane</div>
+
+                <div class="product__feedback feedback">
+                  <div class="feedback__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/feedbacks/feedback5.webp'>
+                      <img width='80' height='80' src='img/feedbacks/feedback5.png' alt=''>
+                    </picture>
+                  </div>
+
+                  <div class="feedback__info">
+                    <div class="feedback__author">
+                      <span>EMILIA JANKOWSKA</span>
+                        <svg width='15' height='15'>
+                      <use href='img/sprite/sprite.svg#verificate'></use>
+                      </svg>
+                    </div>
+
+                    <div class="rating">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input class="rating__item" type="radio" value="1" name="rating">
+                          <input class="rating__item" type="radio" value="2" name="rating">
+                          <input class="rating__item" type="radio" value="3" name="rating">
+                          <input class="rating__item" type="radio" value="4" name="rating">
+                          <input class="rating__item" type="radio" value="5" name="rating">
+                        </div>
+                      </div>
+
+                      <div class="rating__summary"><span class="rating__value">3.6</span>/5</div>
+                    </div>
+
+                    <p class="feedback__text">
+                      Byłam zdumiona, jak miękki i elastyczny jest ten pokrowiec, doskonale przylega do kanapy i naprawdę pozostaje na miejscu. Dostawa w ciągu 3 dni. Polecam!!!
+                    </p>
+
+                    <a class="feedback__link" href="#feedbacks">Czytaj więcej</a>
+                  </div>
+                </div>
+
+                <div class="product__pricelist">
+                  <div class="discount">
+                    -33%
+                  </div>
+                  <div class="old-price"><span>207</span> zł</div>
+                  <div class="new-price"><span>139</span> zł</div>
+                </div>
+
+                <div class="product__amounts">
+                  <svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#box'></use>
+                  </svg>
+                  <span>Zostało mniej niż <span class="amount">14</span> sztuk!</span>
+                </div>
+
+                <button class="product__booking btn btn-booking">Złóż zamówienie</button>
+
+                <div class="product__bot">
+                  <div class="product__info-payment">
+                    <svg width='22' height='22'>
+                      <use href='img/sprite/sprite.svg#payment'></use>
+                    </svg>
+                    <span>Płatność przy odbiorze</span>
+                  </div>
+
+                  <ul class="payments">
+                    <li class="payments__item">
+                      <picture>
+                        <source type='image/webp' srcset='img/payments/dotpay.webp'>
+                        <img width='51' height='17' src='img/payments/dotpay.png' alt='dotpay'>
+                      </picture>
+                    </li>
+                    <li class="payments__item">
+                      <picture>
+                        <source type='image/webp' srcset='img/payments/visa.webp'>
+                        <img width='51' height='17' src='img/payments/visa.png' alt='visa'>
+                      </picture>
+                    </li>
+                    <li class="payments__item">
+                      <picture>
+                        <source type='image/webp' srcset='img/payments/mastercard.webp'>
+                        <img width='29' height='17' src='img/payments/mastercard.png' alt='mastercard'>
+                      </picture>
+                    </li>
+                    <li class="payments__item">
+                      <picture>
+                        <source type='image/webp' srcset='img/payments/express.webp'>
+                        <img width='51' height='17' src='img/payments/express.png' alt='express'>
+                      </picture>
+                    </li>
+                    <li class="payments__item">
+                      <picture>
+                        <source type='image/webp' srcset='img/payments/blik.webp'>
+                        <img width='39' height='17' src='img/payments/blik.png' alt='blik'>
+                      </picture>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__advantages advantages">
+          <div class="advantages__head">
+            <span>Produkt polecany przez klientów!!</span>
+            Aż 98,6% klientów oceniło ten zakup z najwyższą możliwą oceną.
+          </div>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__item-head">
+                <span></span>
+                <svg width='60' height='60'>
+                  <use href='img/sprite/sprite.svg#dostava'></use>
+                </svg>
+              </div>
+
+              <p>Szybka dostawa</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-head">
+                <span></span>
+                <svg width='60' height='60'>
+                  <use href='img/sprite/sprite.svg#zakup'></use>
+                </svg>
+              </div>
+
+              <p>100% bezpieczny zakup</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-head">
+                <span></span>
+                <svg width='60' height='60'>
+                  <use href='img/sprite/sprite.svg#zwrotu'></use>
+                </svg>
+              </div>
+
+              <p>30-dniową gwarancję zwrotu</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-head">
+                <span></span>
+                <svg width='60' height='60'>
+                  <use href='img/sprite/sprite.svg#satysfakcji'></use>
+                </svg>
+              </div>
+
+              <p>Gwarancja 100% satysfakcji</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="product__describe">
+          <div class="container">
+            <div class="product__describe-wrapp">
+              <div class="product__describe-info">
+                <div class="product__describe-subtitle">Piękne, wygodne i w przystępnej cenie!</div>
+                <div class="product__describe-title">Chroń meble, ukrywaj wady i odnawiaj je w niedrogi sposób! </div>
+
+                <p class="product__describe-text">Zakup pokrowców na meble to najlepszy sposób na ochronę tapicerki sof, foteli, krzeseł i innych mebli tapicerowanych przed różnymi zabrudzeniami i zużyciem. Nasz sklep oferuje szeroki wybór pokrowców w różnych kolorach, pasujących do wszystkich rozmiarów i konfiguracji mebli.</p>
+
+                <div class="product__describe-sales">
+                  <span>Piękne, wygodne i w przystępnej cenie!</span>
+
+                  <ul class="product__describe-list">
+                    <li>na 1 fotel - 139 zł</li>
+                    <li>na sofie - 189 zł</li>
+                    <li>na sofie + 1 fotel - 259 zł</li>
+                    <li>na sofie + 2 fotele - 349 zł</li>
+                    <li>na sofie narożnej - 249 zł</li>
+                    <li>na sofie narożnej + 1 fotel - 329 zł</li>
+                    <li>na sofie narożnej + 2 fotel - 399 zł</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="product__describe-image">
+                <picture>
+                  <source type='image/webp' srcset='img/cenie.webp'>
+                  <img width='580' height='580' src='img/cenie.png' alt='Piękne, wygodne i w przystępnej cenie!'>
+                </picture>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="product__choose">
+          <div class="container">
+            <div class="product__choose-wrapp">
+              <h2 class="product__choose-title title">Wybierz swoją opcję i ciesz się!</h2>
+
+              <ul class="product__choose-items">
+                <li class="product__choose-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card1.webp'>
+                          <img width='270' height='270' src='img/card/card1.png' alt='Na sofie narożnej + 1 fotel'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Na sofie narożnej + 1 fotel</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <!-- <li class="product__choose-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card2.webp'>
+                          <img width='270' height='270' src='img/card/card2.png' alt='Na sofie narożnej + 1 fotel'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Na sofie narożnej + 1 fotel</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__choose-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card3.webp'>
+                          <img width='270' height='270' src='img/card/card3.png' alt='Na sofie narożnej + 1 fotel'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Na sofie narożnej + 1 fotel</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__choose-item">
+                  <div class="card">
+                    <a class="card__image" href="#">
+                      <div class="card__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/card/card4.webp'>
+                          <img width='270' height='270' src='img/card/card4.png' alt='Na sofie narożnej + 1 fotel'>
+                        </picture>
+                      </div>
+
+                      <div class="card__discount discount">
+                        -33%
+                      </div>
+                    </a>
+
+                    <a class="card__title" href="#">Na sofie narożnej + 1 fotel</a>
+
+                    <div class="card__bot">
+                      <div class="card__pricelist">
+                        <div class="old-price"><span>207</span> zł</div>
+                        <div class="new-price"><span>139</span> zł</div>
+                      </div>
+
+                      <button class="btn btn-buy">KUP</button>
+                    </div>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__feature">
+          <div class="container">
+            <div class="product__feature-wrapp">
+              <h2 class="product__feature-title title">Cechy i charakterystyki</h2>
+
+              <ul class="product__feature-items">
+                <li class="product__feature-item">
+                  <div class="product__feature-image">
+                    <picture>
+                      <source type='image/webp' srcset='img/sofa1.webp'>
+                      <img src='img/sofa1.png' alt=''>
+                    </picture>
+                  </div>
+
+                  <ul class="product__feature-details" data-spollers data-one-spoller>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading _active" tabindex="-1" type="button" data-spoller>
+                        EXTRA JAKOŚĆ. Wyprodukowano w Turcji!
+                      </button>
+                      <div class="product__feature-text">
+                        Materiał: Gruba Dzianina. 90% miękkiego poliestru, 10% elastanu. Miękka tkanina o przyjaznym dla skóry pH. 100% hipoalergiczny.
+                      </div>
+                    </li>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                        Łatwy do usunięcia i wyprania, nie wymaga prasowania
+                      </button>
+                      <div class="product__feature-text">
+                        Materiał: Gruba Dzianina. 90% miękkiego poliestru, 10% elastanu. Miękka tkanina o przyjaznym dla skóry pH. 100% hipoalergiczny.
+                      </div>
+                    </li>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                        Tkanina Premium
+                      </button>
+                      <div class="product__feature-text">
+                        Materiał: Gruba Dzianina. 90% miękkiego poliestru, 10% elastanu. Miękka tkanina o przyjaznym dla skóry pH. 100% hipoalergiczny.
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="product__feature-item">
+                  <div class="product__feature-image">
+                    <picture>
+                      <source type='image/webp' srcset='img/sofa2.webp'>
+                      <img src='img/sofa2.png' alt=''>
+                    </picture>
+                  </div>
+
+                  <ul class="product__feature-details" data-spollers data-one-spoller>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                        Chroni przed brudem, kurzem i plamami
+                      </button>
+                      <div class="product__feature-text">
+                        Materiał: Gruba Dzianina. 90% miękkiego poliestru, 10% elastanu. Miękka tkanina o przyjaznym dla skóry pH. 100% hipoalergiczny.
+                      </div>
+                    </li>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                        Nie pozostawia plam na meblach
+                      </button>
+                      <div class="product__feature-text">
+                        Materiał: Gruba Dzianina. 90% miękkiego poliestru, 10% elastanu. Miękka tkanina o przyjaznym dla skóry pH. 100% hipoalergiczny.
+                      </div>
+                    </li>
+                    <li class="product__feature-detail">
+                      <button class="product__feature-heading" tabindex="-1" type="button" data-spoller>
+                        Tkanina Premium
+                      </button>
+                      <div class="product__feature-text">
+                        Duża elastyczność tkaniny sprawia, że bez trudu znajdziemy odpowiedni pokrowiec na każdy mebel.
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-divider">
+          <div class="container">
+            <div class="product-divider__wrapp">
+              <span>Pospiesz się, zanim skończą się zapasy!</span>
+              <a class="btn btn-order" href="#">Złóż zamówienie</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__feedbacks" id="feedbacks">
+          <div class="container">
+            <div class="product__feedbacks-wrapp">
+              <div class="product__feedbacks-title title">Szczęśliwi klienci i ich opinie</div>
+
+              <div class="product__feedbacks-ratings">
+                <div class="rating">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" type="radio" value="1" name="rating">
+                      <input class="rating__item" type="radio" value="2" name="rating">
+                      <input class="rating__item" type="radio" value="3" name="rating">
+                      <input class="rating__item" type="radio" value="4" name="rating">
+                      <input class="rating__item" type="radio" value="5" name="rating">
+                    </div>
+                  </div>
+
+                  <div class="rating__summary"><span class="rating__value">4.6</span>/5</div>
+                </div>
+
+                <div class="product__feedbacks-total"><span>2389</span> reviews</div>
+              </div>
+
+              <div class="product__feedbacks-slider swiper-container">
+                <ul class="product__feedbacks-wrapper swiper-wrapper">
+                  <li class="product__feedbacks-slide swiper-slide">
+                    <div class="feedback">
+                      <div class="feedback__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/feedbacks/feedback1.webp'>
+                          <img width='240' height='240' src='img/feedbacks/feedback1.png' alt=''>
+                        </picture>
+                      </div>
+
+                      <div class="feedback__info">
+                        <div class="feedback__author">
+                          <span>NATALIA ZAWADZKA</span>
+                            <svg width='15' height='15'>
+                          <use href='img/sprite/sprite.svg#verificate'></use>
+                          </svg>
+                        </div>
+
+                        <div class="rating">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+
+                          <div class="rating__summary"><span class="rating__value">4.8</span>/5</div>
+                        </div>
+
+                        <p class="feedback__text">
+                          Rozciąga się i łatwo wsuwa się w szczeliny sofy. Używam go na starej sofie z zakrzywionym oparciem i musiałem go rozciągnąć ze względu na nietypowy kształt oparcia sofy. Ponadto gumka u góry falbanki pomaga dopasować długość.
+                        </p>
+
+                        <button class="feedback__full feedback__link">Czytaj więcej</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product__feedbacks-slide swiper-slide">
+                    <div class="feedback">
+                      <div class="feedback__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/feedbacks/feedback2.webp'>
+                          <img width='240' height='240' src='img/feedbacks/feedback2.png' alt=''>
+                        </picture>
+                      </div>
+
+                      <div class="feedback__info">
+                        <div class="feedback__author">
+                          <span>EMILIA JANKOWSKA</span>
+                            <svg width='15' height='15'>
+                          <use href='img/sprite/sprite.svg#verificate'></use>
+                          </svg>
+                        </div>
+
+                        <div class="rating">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+
+                          <div class="rating__summary"><span class="rating__value">3.3</span>/5</div>
+                        </div>
+
+                        <p class="feedback__text">
+                          Kupiłam ten pokrowiec na sofę i dwa fotele. Po pierwsze, tkanina jest bardzo rozciągliwa, co jest świetne dla mojej dużej sofy. Łatwo było go założyć, uchwyty dobrze pasują!
+                        </p>
+
+                        <button class="feedback__full feedback__link">Czytaj więcej</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product__feedbacks-slide swiper-slide">
+                    <div class="feedback">
+                      <div class="feedback__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/feedbacks/feedback3.webp'>
+                          <img width='240' height='240' src='img/feedbacks/feedback3.png' alt=''>
+                        </picture>
+                      </div>
+
+                      <div class="feedback__info">
+                        <div class="feedback__author">
+                          <span>DANUTA KACZMAREK</span>
+                            <svg width='15' height='15'>
+                          <use href='img/sprite/sprite.svg#verificate'></use>
+                          </svg>
+                        </div>
+
+                        <div class="rating">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+
+                          <div class="rating__summary"><span class="rating__value">1.6</span>/5</div>
+                        </div>
+
+                        <p class="feedback__text">
+                          Bardzo stylowy pokrowiec na fotel. Pasuje bezpiecznie i można ją założyć w kilka minut. Zamówiłem już drugi. Wysoce zalecane.
+                        </p>
+
+                        <button class="feedback__full feedback__link">Czytaj więcej</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product__feedbacks-slide swiper-slide">
+                    <div class="feedback">
+                      <div class="feedback__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/feedbacks/feedback4.webp'>
+                          <img width='240' height='240' src='img/feedbacks/feedback4.png' alt=''>
+                        </picture>
+                      </div>
+
+                      <div class="feedback__info">
+                        <div class="feedback__author">
+                          <span>ANETA KOSIŃSKA</span>
+                            <svg width='15' height='15'>
+                          <use href='img/sprite/sprite.svg#verificate'></use>
+                          </svg>
+                        </div>
+
+                        <div class="rating">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+
+                          <div class="rating__summary"><span class="rating__value">4.3</span>/5</div>
+                        </div>
+
+                        <p class="feedback__text">
+                          Mam w domu małe dziecko i uwielbia robić bałagan ściągając narzutę z kanapy. Wreszcie znalazłem pokrowiec, którego mój maluch nie może ściągnąć z kanapy!
+                        </p>
+
+                        <button class="feedback__full feedback__link">Czytaj więcej</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product__feedbacks-slide swiper-slide">
+                    <div class="feedback">
+                      <div class="feedback__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/feedbacks/feedback6.webp'>
+                          <img width='240' height='240' src='img/feedbacks/feedback6.png' alt=''>
+                        </picture>
+                      </div>
+
+                      <div class="feedback__info">
+                        <div class="feedback__author">
+                          <span>MARCIN WOLSKI</span>
+                            <svg width='15' height='15'>
+                          <use href='img/sprite/sprite.svg#verificate'></use>
+                          </svg>
+                        </div>
+
+                        <div class="rating">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+
+                          <div class="rating__summary"><span class="rating__value">2.2</span>/5</div>
+                        </div>
+
+                        <p class="feedback__text">
+                          Pokochasz te pokrowcie ! Kupiłam jeden do mojej sofy i planuję kupić jeden do mojego fotela! Są miękkie, elastyczne i świetnie pasują! Wydaje mi się - idealnie pasuje do stylu pokoju
+                        </p>
+
+                        <button class="feedback__full feedback__link">Czytaj więcej</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="product__slider-pagination swiper-pagination"></div>
+              </div>
+
+              <button class="btn btn-send">Przeslij opinie</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__bottom">
+          <div class="container">
+            <div class="product__bottom-wrapp">
+              <div class="product__image">
+                <picture>
+                  <source type='image/webp' srcset='img/product.webp'>
+                  <img width='560' height='560' src='img/product.png' alt='Pokrowce na meble tapicerowane'>
+                </picture>
+              </div>
+
+              <div class="product__bottom-info">
+                <div class="product__name">Pokrowce na meble tapicerowane</div>
+
+                <ul class="product__gross">
+                  <li class="product__gross-item">
+                    <div class="product__gross-head">Ilość:</div>
+
+                    <label>
+                      <input class="product__gross-radio" type="radio" name="gross" checked>
+                      <span class="product__gross-body">
+                        <b>1x 139 zł</b>/szt.
+                      </span>
+                    </label>
+                  </li>
+                  <li class="product__gross-item">
+                    <div class="product__gross-head">Popularna oferta</div>
+
+                    <label>
+                      <input class="product__gross-radio" type="radio" name="gross">
+                      <span class="product__gross-body">
+                        <b>2x 118.15 zł</b>/szt.
+                      </span>
+                    </label>
+                  </li>
+                  <li class="product__gross-item">
+                    <div class="product__gross-head">Najlepsza oferta</div>
+
+                    <label>
+                      <input class="product__gross-radio" type="radio" name="gross">
+                      <span class="product__gross-body">
+                        <b>3x 111.20 zł</b>/szt.
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+
+                <div class="product__pricelist">
+                  <div class="discount">
+                    -33%
+                  </div>
+                  <div class="old-price"><span>207</span> zł</div>
+                  <div class="new-price"><span>139</span> zł</div>
+                </div>
+
+                <div class="product__amounts">
+                  <svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#box'></use>
+                  </svg>
+                  <span>Zostało mniej niż <span class="amount">14</span> sztuk!</span>
+                </div>
+
+                <form class="product__variants">
+                  <div class="product__variants-items">
+                    <div class="product__variant">
+                      <div class="product__variant-title">
+                        <svg width='15' height='15'>
+                          <use href='img/sprite/sprite.svg#alert'></use>
+                        </svg>
+                        <span>Wybierz swój Zestaw</span>
+                      </div>
+
+                      <div class="product__variant-select select">
+                        <div class="product__variant-header select__header">
+                          <span class="product__variant-current select__current">
+                            Wybierz opcjęna
+                          </span>
+                          <svg width='14' height='7'>
+                            <use href='img/sprite/sprite.svg#arrow-down'></use>
+                          </svg>
+                        </div>
+
+                        <ul class="product__variant-body select__body">
+                          <li class="product__variant-item" data-choice='choosen'>1</li>
+                          <li class="product__variant-item" data-choice='choosen'>2</li>
+                          <li class="product__variant-item" data-choice='choosen'>3</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__variant">
+                      <div class="product__variant-title">
+                        <svg width='15' height='15'>
+                          <use href='img/sprite/sprite.svg#alert'></use>
+                        </svg>
+                        <span>Wybierz swój Color</span>
+                      </div>
+
+                      <div class="product__variant-select select">
+                        <div class="product__variant-header select__header">
+                          <span class="product__variant-current select__current">
+                            Wybierz color
+                          </span>
+                          <svg width='14' height='7'>
+                            <use href='img/sprite/sprite.svg#arrow-down'></use>
+                          </svg>
+                        </div>
+
+                        <ul class="product__variant-body select__body">
+                          <li class="product__variant-item" data-choice='choosen'>red</li>
+                          <li class="product__variant-item" data-choice='choosen'>kakaowy</li>
+                          <li class="product__variant-item" data-choice='choosen'>blue</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-booking" type="submit">Złóż zamówienie</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="product__faq faq">
+          <h2 class="faq__title title">FAQ - Często Zadawane Pytania</h2>
+          <p class="faq__descr">Odpowiadamy natychmiast na wszystkie pytania: <a class="email" href="mailto:info@defi-home.eu">info@defi-home.eu</a></p>
+
+          <ul class="faq__accordion" data-spollers data-one-spoller>
+            <li class="faq__accordion-item">
+              <button class="faq__question _active" tabindex="-1" type="button" data-spoller>
+                <span>Ile wynosi koszt przesyłki?</span>
+                <svg width='14' height='7'>
+                  <use href='img/sprite/sprite.svg#agile'></use>
+                </svg>
+              </button>
+              <div class="faq__answer">
+                Koszty wysyłki wynoszą 0,00ZŁ. W przypadku płatności przy odbiorze firma kurierska pobierze prowizję w wysokości 14,99ZŁ.
+              </div>
+            </li>
+            <li class="faq__accordion-item">
+              <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                <span>Jakie są dostępne metody płatności?</span>
+                <svg width='14' height='7'>
+                  <use href='img/sprite/sprite.svg#agile'></use>
+                </svg>
+              </button>
+              <div class="faq__answer">
+                Koszty wysyłki wynoszą 0,00ZŁ. W przypadku płatności przy odbiorze firma kurierska pobierze prowizję w wysokości 14,99ZŁ.
+              </div>
+            </li>
+            <li class="faq__accordion-item">
+              <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                <span>Kiedy otrzymam zamówiony produkt?</span>
+                <svg width='14' height='7'>
+                  <use href='img/sprite/sprite.svg#agile'></use>
+                </svg>
+              </button>
+              <div class="faq__answer">
+                Koszty wysyłki wynoszą 0,00ZŁ. W przypadku płatności przy odbiorze firma kurierska pobierze prowizję w wysokości 14,99ZŁ.
+              </div>
+            </li>
+            <li class="faq__accordion-item">
+              <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                <span>Kto jest odpowiedzialny za dostawę?</span>
+                <svg width='14' height='7'>
+                  <use href='img/sprite/sprite.svg#agile'></use>
+                </svg>
+              </button>
+              <div class="faq__answer">
+                Koszty wysyłki wynoszą 0,00ZŁ. W przypadku płatności przy odbiorze firma kurierska pobierze prowizję w wysokości 14,99ZŁ.
+              </div>
+            </li>
+            <li class="faq__accordion-item">
+              <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                <span>Czy mogę zwrócić zamówiony produkt?</span>
+                <svg width='14' height='7'>
+                  <use href='img/sprite/sprite.svg#agile'></use>
+                </svg>
+              </button>
+              <div class="faq__answer">
+                Koszty wysyłki wynoszą 0,00ZŁ. W przypadku płatności przy odbiorze firma kurierska pobierze prowizję w wysokości 14,99ZŁ.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     @include('partials/footer.html',{})
