@@ -133,6 +133,7 @@
     grid-gap: 40px;
 
     ul {
+      height: 100%;
       width: 100%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
