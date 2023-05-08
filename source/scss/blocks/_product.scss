@@ -123,6 +123,7 @@
 
   &__choose {
     margin-bottom: clamp(60px, 7.018vw, 80px);
+    background-color: yellow;
   }
 
   &__choose-wrapp {
@@ -131,6 +132,7 @@
     justify-content: center;
     align-items: center;
     grid-gap: 40px;
+    background-color: blue;
 
     ul {
       height: 100%;
